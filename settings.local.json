@@ -1,0 +1,37 @@
+{
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -Command \"& (Join-Path ([Environment]::GetFolderPath('UserProfile')) '.claude\\notify.ps1')\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -Command \"& (Join-Path ([Environment]::GetFolderPath('UserProfile')) '.claude\\notify.ps1')\""
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -Command \"& (Join-Path ([Environment]::GetFolderPath('UserProfile')) '.claude\\notify.ps1')\""
+          }
+        ]
+      }
+    ]
+  }
+}
